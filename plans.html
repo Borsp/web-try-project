@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plans - Gym Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="site-header">
+    <div class="container">
+      <h1>Gym Planner</h1>
+      <p align="center">Workout Plans Page</p>
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="plans.html" class="active">Plans</a>
+        <a href="contact.html">Join</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+           target="_blank" rel="noopener noreferrer">WHO</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Plan Generator (JS)</h2>
+
+      <label for="level">Choose level:</label>
+      <select id="level">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <button id="btnGenerate" class="btn">Generate Plan</button>
+
+      <div class="output" id="planOutput">
+        <p>Click "Generate Plan" to see your plan here.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tables (Requirement)</h2>
+
+      <h3 align="center">Table 1: Push Day (HTML Attributes Demo)</h3>
+      <table border="1" cellpadding="10" cellspacing="3" width="100%" align="center">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+        <tr>
+          <td>Bench Press</td>
+          <td>4</td>
+          <td>6-10</td>
+        </tr>
+        <tr>
+          <td>Incline DB Press</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+      </table>
+
+      <h3>Table 2: Pull Day</h3>
+      <table class="t">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+        <tr>
+          <td>Lat Pulldown</td>
+          <td>4</td>
+          <td>8-12</td>
+        </tr>
+        <tr>
+          <td>Row</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+      </table>
+
+      <h3>Table 3: Legs Day</h3>
+      <table class="t">
+        <tr>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+        <tr>
+          <td>Squat</td>
+          <td>4</td>
+          <td>6-10</td>
+        </tr>
+        <tr>
+          <td>Leg Press</td>
+          <td>3</td>
+          <td>10-15</td>
+        </tr>
+      </table>
+
+      <h3>Table 4: Cardio Schedule</h3>
+      <table class="t">
+        <tr>
+          <th>Day</th>
+          <th>Cardio</th>
+          <th>Minutes</th>
+        </tr>
+        <tr>
+          <td>Wed</td>
+          <td>Incline walk</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Sat</td>
+          <td>Bike</td>
+          <td>15</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Lists (Requirement)</h2>
+      <ul>
+        <li>Warm-up
+          <ul>
+            <li>5 min light cardio</li>
+            <li>Mobility</li>
+          </ul>
+        </li>
+        <li>Training</li>
+        <li>Cool-down</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+      <span>© 2025 Gym Planner</span>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

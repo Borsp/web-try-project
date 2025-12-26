@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join - Gym Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="site-header">
+    <div class="container">
+      <h1>Gym Planner</h1>
+      <p align="center">Join / Contact</p>
+
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html" class="active">Join</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity"
+           target="_blank" rel="noopener noreferrer">WHO</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Form 1: Join Form</h2>
+      <form id="joinForm">
+        <label>Full Name:</label>
+        <input type="text" id="fullName" placeholder="John Doe">
+
+        <label>Age:</label>
+        <input type="text" id="age" placeholder="18">
+
+        <label>Password (demo):</label>
+        <input type="password" id="pass" placeholder="password">
+
+        <label>Goal:</label>
+        <select id="goal">
+          <option value="bulk">Bulk</option>
+          <option value="cut">Cut</option>
+          <option value="maintain">Maintenance</option>
+        </select>
+
+        <button type="button" id="btnJoin" class="btn">Submit</button>
+      </form>
+
+      <div class="output" id="joinOutput"></div>
+    </div>
+
+    <div class="card">
+      <h2>Form 2: Choose Training Days (Checkbox)</h2>
+      <form>
+        <label><input type="checkbox" name="days" value="Mon"> Monday</label>
+        <label><input type="checkbox" name="days" value="Wed"> Wednesday</label>
+        <label><input type="checkbox" name="days" value="Fri"> Friday</label>
+        <label><input type="checkbox" name="days" value="Sun"> Sunday</label>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Form 3: Membership Type (Radio)</h2>
+      <form>
+        <label><input type="radio" name="member" value="basic"> Basic</label>
+        <label><input type="radio" name="member" value="pro"> Pro</label>
+        <label><input type="radio" name="member" value="elite"> Elite</label>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Form 4: Contact (Text + Submit)</h2>
+      <form action="#" method="get">
+        <label>Email:</label>
+        <input type="text" placeholder="example@mail.com">
+
+        <label>Message:</label>
+        <input type="text" placeholder="Write something...">
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+  </div>
+
+  <div class="site-footer">
+    <div class="container">
+      <span>© 2025 Gym Planner</span>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

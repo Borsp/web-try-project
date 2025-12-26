@@ -1,0 +1,97 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background-color: #f6f6f6;
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+}
+
+.container {
+  width: 92%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 16px 0;
+  border-bottom: 2px solid #ddd;
+  background: #fff;
+}
+
+.nav {
+  margin-top: 10px;
+  display: block;
+}
+
+.nav a {
+  display: inline;
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+}
+
+.nav a.active {
+  border-width: 2px;
+}
+
+.card {
+  background: #fff;
+  margin: 14px 0;      
+  padding: 14px;             
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.hero-img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #eee;
+}
+
+.output {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed #aaa;
+}
+
+.t {
+  width: 100%;
+  margin: 10px 0 18px 0;
+  border-collapse: collapse; 
+}
+
+.t th, .t td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.t th {
+  background: #f0f0f0;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+label { display: block; margin-top: 10px; }
+input, select { width: 100%; padding: 10px; margin-top: 6px; }
+
+.site-footer {
+  margin-top: 25px;
+  padding: 18px 0;
+  background: #fff;
+  border-top: 2px solid #ddd;
+}
+
+.highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
